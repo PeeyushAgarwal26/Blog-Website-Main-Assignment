@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* CSS is Done by:- Peeyush Agarwal */
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr {
+    height: 1px;
+    background-color: #1D263A;
+    border: none;
+}
+
+section.main-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+section nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+section.main-section nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+section.main-section nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+section.main-section ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+}
+
+section.main-section ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.main-section ul li a.button-gw {
+    background-color: var(--but-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 65px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+
+section.main-section > section.content-section {
+    background: #F9FAFB;
+    height: 2520px;
+}
+
+div.img-part img {
+    width: 100vw;
+}
+
+div.img-part div.details {
+    position: absolute;
+    width: 856px;
+    height: 153px;
+    left: 152px;
+    top: 426px; 
+    color: white;
+    padding-bottom: 60px;
+}
+
+div.img-part div.details h2 {
+    font-size: 42px;
+}
+
+div.img-part div.details ul {
+    padding-top: 24px;
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+div.img-part div.details ul li i {
+    color: #1787FC;
+    margin-right: 10px;
+}
+
+div.text-part {
+    width: 742px !important;
+    height: 1701px !important;
+    padding-left: 150px;
+    padding-right: 30px;
+}
+
+div.text-part ul {
+    flex-direction: column;
+    gap: 1px;
+    list-style: none;
+}
+
+div.text-part ul li::before {
+    content: "\25AA";
+    color: #1787FC;
+    font-weight: bold;
+    display: inline-block; 
+    width: 10px;
+    margin-left: -1em;
+    padding-right: 5px;
+}
+
+div.text-part p,
+div.text-part ul li {
+    font-size: 17px;
+    padding-bottom: 20px;
+    color: #1D263A;
+    opacity: 0.8;
+}
+
+div.text-part p.quote {
+    background: linear-gradient(270deg, #047AF5 1%, rgba(23, 135, 252, 0.6) 99%);
+    padding-top: 40px; 
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    color: white;
+    font-size: 20px;
+    border-radius: 0px 25px 25px 25px;
+    margin-bottom: 30px;
+}
+
+div.text-part h2 {
+    font-size: 21px;
+    padding-bottom: 20px;
+    color: #1D263A;
+}
+
+div.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.pad-top-80 {
+    padding-top: 80px;
+}
+
+div.text-part p.tagged {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-weight: 600;
+}
+
+div.text-part p.tagged a {
+    text-decoration: none;
+    color: #1D263A;
+    padding: 8px 25px;
+    border: 1px solid #1D263A;
+    margin-left: 10px;
+    font-weight: 550;
+}
+
+div.projects,
+div.projects div.right,
+div.projects div.left {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+div.projects div.text p {
+    padding: 0;
+}
+
+div.projects div.text p#heading {
+    font-size: 21px;
+    font-weight: 600;
+    color: #1D263A;
+    padding-bottom: 5px;
+}
+
+div.projects div.right div.text {
+    text-align: right;
+}
+
+div.projects {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+div.projects div.right i,
+div.projects div.left i {
+    padding: 22px;
+    color: white;
+    background-color: #1787FC;
+    overflow: hidden;
+}
+
+section div.aside-part {
+    float: right;
+}
+
+section div.aside-part section#search {
+    position: absolute;
+    width: 350px;
+    height: 170px;
+    left: 1098px;
+    top: 500px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 4px 56px rgba(22, 22, 22, 0.2);
+}
+
+section div.aside-part section#search h2 {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 21px;
+    color: #1D263A;
+}
+
+section div.aside-part section#search span {
+    margin-left: 30px;
+    font-size: 15px;
+    color: #1D263A;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    padding: 16px 0;
+    width: 290px;
+}
+
+section div.aside-part section#search span i {
+    padding: 0 20px;
+}
+
+/* Aside wale saare section ka ek saath style */
+
+section div.aside-part section#recent-posts,
+section div.aside-part section#popular-posts,
+section div.aside-part section#categories,
+section div.aside-part section#archive,
+section div.aside-part section#tag-cloud {
+    box-sizing: border-box;
+    margin-top: 30px;
+    position: absolute;
+    width: 350px;
+    height: 460px;
+    left: 1098px;
+    top: 677px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 30px;
+    box-shadow: 0px 4px 56px rgba(22, 22, 22, 0.2);
+}
+
+section div.aside-part section#recent-posts h2,
+section div.aside-part section#popular-posts h2,
+section div.aside-part section#categories h2,
+section div.aside-part section#archive h2,
+section div.aside-part section#tag-cloud h2 {
+    font-weight: 600;
+    font-size: 21px;
+    color: #1D263A;
+}
+
+section div.aside-part section#recent-posts span,
+section div.aside-part section#popular-posts span,
+section div.aside-part section#categories span,
+section div.aside-part section#archive span,
+section div.aside-part section#tag-cloud span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1D263A;
+    opacity: 0.95;
+}
+
+section div.aside-part section#recent-posts span date,
+section div.aside-part section#popular-posts span date {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #1D263A;
+    opacity: 0.8;
+}
+
+/* Aside Section wale ke aalag aalag styles */
+
+section div.aside-part section#popular-posts {
+    left: 1098px;
+    top: 1169px;
+}
+
+section div.aside-part section#categories {
+    position: absolute;
+    width: 350px;
+    height: 395px;
+    left: 1098px;
+    top: 1660px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+section div.aside-part section#categories span {
+    font-weight: 400;
+}
+
+section div.aside-part section#archive {
+    position: absolute;
+    width: 350px;
+    height: 170px;
+    left: 1098px;
+    top: 2089px;
+}
+
+section div.aside-part section#archive span {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    border: 1px solid #1D263A;
+    border-radius: 5px;
+}
+
+section div.aside-part section#tag-cloud {
+    position: absolute;
+    width: 350px;
+    height: 265px;
+    left: 1098px;
+    top: 2294px;
+    padding: 20px 30px;
+}
+
+section div.aside-part section#tag-cloud p {
+    display: flex;
+    justify-content: space-between;
+}
+
+section div.aside-part section#tag-cloud span {
+    font-weight: 400;
+    border: 1px solid rgba(29, 38, 58, 0.5);
+    border-radius: 10px;
+    padding: 9px 20px;
+}
+
+/* Footer Starts From Here | Made By:- Peeyush Agarwal */
+
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+
+/* This Section is Made by :- Vinayak Sharma */
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 2434px;
+    width: 80%;
+    left: 0px;
+    top: 2876px;
+    background: #f9fafb;
+    border: 1px solid rgba(181, 181, 181, 0.2);
+    border-radius: 144px;
+    padding: 50px;
+    margin: auto;
+}
+  
+.testimonial-heading {
+    font-size: 1.5rem;
+    height: 46px;
+    width: 233px;
+    left: 91px;
+    top: 2942px;
+    border-radius: nullpx;
+    margin: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+#profile-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    flex-wrap: wrap;
+}
+  
+.profile-image {
+    float: left;
+    margin: 30px 0px;
+    padding: 5px 10px;
+}
+  
+.profile-image2 {
+    float: left;
+    margin: 28px 7px;
+    padding: 3px 10px;
+}
+  
+.testimonial-box span {
+    font-family: "Mazzard";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1d263a;
+    opacity: 0.8;
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.testimonial-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100;
+}
+  
+.testimonial-box-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100;
+    margin-left: 58px;
+}
+  
+.testimonial-box {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
+}
+  
+#reply {
+    margin-left: 3rem;
+    flex: 1;
+}
+  
+.comment__card-footer {
+    margin: 20px;
+}
+
+.terminal {
+    height: 721px;
+    width: 498px;
+    border-radius: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 34px;
+    letter-spacing: 1x;
+    padding: 3rem 0rem;
+}
+  
+.terminal div {
+    align-items: center;
+    text-align: center;
+}
+  
+.button {
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(33, 233, 76);
+    height: 56px;
+    width: 408px;
+    left: 133px;
+    top: 5074px;
+    border-radius: 50px;
+    font-family: Mazzard;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+  
+.message {
+    padding: 20px;
+    height: 181px;
+    width: 406px;
+    left: 135px;
+    top: 4860px;
+    border-radius: 10px;
+}
+  
+.subject {
+    padding: 20px;
+    height: 50px;
+    width: 408px;
+    left: 133px;
+    top: 4744px;
+    border-radius: 10px;
+}
+  
+.email {
+    padding: 20px;
+    height: 50px;
+    width: 408px;
+    left: 133px;
+    top: 4638px;
+    border-radius: 10px;
+}
+  
+.name {
+    padding: 20px;
+    height: 50px;
+    width: 408px;
+    left: 133px;
+    top: 4526px;
+    border-radius: 10px;
+}
+  
+.box_title {
+    display: flex;
+    font-family: Mazzard;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0px;
+    width: 100%;
+    padding-left: 3rem;
+}
+/* Vinayak Code Ends */
+
+/* Responsiveness Done by:- Peeyush Agarwal */
+
+@media (max-width: 960px) {
+    .main-section {
+        height: auto;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: var(--text-clr2);
+        padding-right: 5px;
+        height: 17px;
+    }
+    
+    .menu {
+        height: 17px;
+        width: 30px;
+        font-size: 25px;
+        padding-right: 5px;
+        color: var(--text-clr2);
+    }
+
+    section nav {
+        padding: 0 30px;
+    }
+
+    /* Nav aur Footer ka Responsiveness ho chuka h.. Idar se Main wala krna h Responsiveness */
+
+
+
+    /* Nav aur Footer ka Responsiveness ho chuka h.. Idar se Main wala krna h Responsiveness */
+
+    footer {
+        height: 350px;
+    }
+    
+    footer .right {
+        padding-left: 50px;
+    }
+    
+    footer div.right span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .right p {
+        font-size: 12px;
+    }
+    
+    footer .left {
+        padding-right: 50px;
+        gap: 35px;
+    }
+    
+    footer .left ul {
+        gap: 1px;
+        font-size: 12px;
+    }
+
+    footer .left ul li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    footer .right {
+        padding-left: 35px;
+    }
+    
+    footer .left {
+        padding-left: 35px;
+    }
+}

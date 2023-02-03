@@ -1,0 +1,398 @@
+/* This Complete Sign Up Page is Made By :- Peeyush Agarwal */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.main-section {
+    height: 100vh;
+    width: 100%;
+}
+
+section nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+section.main-section nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+section.main-section nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+section.main-section ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+}
+
+section.main-section ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.main-section ul li a.button-gw {
+    background-color: var(--but-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 65px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+/* ------- Form Section Begins | Made by:- Peeyush Agarwal ------- */
+
+section.form-section {
+    background-color: #F9FAFB;
+    height: 1065px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+section.form-section .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+section.form-section .right form {
+    margin-top: 142px;
+}
+
+section.form-section .right h2 {
+    font-size: 60px;
+    color: var(--text-clr2);
+}
+
+section.form-section .right form .no-cc {
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: var(--text-clr2);
+    opacity: 0.7;
+}
+
+section.form-section .right label {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-clr2);
+}
+
+section.form-section .right input {
+    background-color: #E1ECF0;
+    width: 400px;
+    padding: 5px 12px;
+    font-size: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+section.form-section .right input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+section.form-section .right span.toc {
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+section.form-section .right p.account-sin {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 0;
+    margin-top: 20px;
+}
+
+section.form-section .right span.toc a,
+section.form-section .right p.account-sin a {
+    text-decoration: none;
+    color: #1787FC;
+}
+
+section.form-section .right span.toc a:visited,
+section.form-section .right p.account-sin a:visited {
+    color: #1787FC;
+}
+
+section.form-section .right input[type="submit"] {
+    padding: 15px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #20BFA9;
+    border-radius: 50px;
+}
+
+/* Footer Starts From Here | Made By:- Peeyush Agarwal */
+
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    /* width: 100%; */
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+
+/* Responsiveness Done by:- Peeyush Agarwal */
+
+@media (max-width: 1300px) {
+    section.form-section, 
+    section.form-section .left img {
+        height: 900px;
+    }
+}
+
+@media (max-width: 1190px) {
+    section.form-section, 
+    section.form-section .left img {
+        height: 800px;
+    }
+
+    section.form-section .right form {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1090px) {
+    section.form-section, 
+    section.form-section .left img {
+        height: 700px;
+    }
+
+    section.form-section .right form {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-section {
+        height: auto;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: var(--text-clr2);
+        padding-right: 5px;
+        height: 17px;
+    }
+    
+    .menu {
+        height: 17px;
+        width: 30px;
+        font-size: 25px;
+        padding-right: 5px;
+        color: var(--text-clr2);
+    }
+
+    section nav {
+        padding: 0 30px;
+    }
+
+    /* section.form-section {
+        flex-wrap: wrap;
+    } */
+
+    section.form-section, 
+    section.form-section .left img {
+        height: 600px;
+    }
+
+    section.form-section .right h2 {
+        font-size: 30px;
+    }
+
+    section.form-section .right form .no-cc {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    section.form-section .right input {
+        width: 300px;
+    }
+    
+    section.form-section .right input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+    
+    section.form-section .right span.toc {
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    
+    section.form-section .right p.account-sin {
+        font-size: 12px;
+        font-weight: 200;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    section.form-section .right input[type="submit"] {
+        padding: 8px;
+        color: #FFF;
+        font-weight: 600;
+        font-size: 12px;
+        background-color: #20BFA9;
+        border-radius: 50px;
+    }
+
+    footer {
+        height: 350px;
+    }
+    
+    footer .right {
+        padding-left: 50px;
+    }
+    
+    footer div.right span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .right p {
+        font-size: 12px;
+    }
+    
+    footer .left {
+        padding-right: 50px;
+        gap: 35px;
+    }
+    
+    footer .left ul {
+        gap: 1px;
+        font-size: 12px;
+    }
+
+    footer .left ul li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 811px) {
+    section.form-section {
+        height: 550px;
+    }
+    section.form-section .left {
+        margin: auto;
+    }
+    section.form-section .left img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.form-section {
+        flex-wrap: wrap;
+        height: 1200px;
+    }
+
+    section.form-section .left {
+        margin: 0 auto;
+    } 
+
+    footer {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    footer .right {
+        padding-left: 35px;
+    }
+    
+    footer .left {
+        padding-left: 35px;
+    }
+}

@@ -1,0 +1,574 @@
+/* This Complete Contact 02 Page is Made By :- Peeyush Agarwal */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.main-section {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar Section Starts | Made by:- Peeyush Agarwal */
+
+section nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+section.main-section nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+section.main-section nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+section.main-section ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+}
+
+section.main-section ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.main-section ul li a.button-gw {
+    background-color: var(--but-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 65px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+/* ------- Contact Section Begins | Made by:- Peeyush Agarwal ------- */
+
+section.contact-section {
+    background-color: #f9fafb;
+    height: 1428px;
+}
+
+section.contact-section img {
+    width: 98.7vw;
+}
+
+section.contact-section form i {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 35px;
+    padding: 26px;
+    border-radius: 50%;
+    margin-bottom: 33px;
+}
+
+section.contact-section div.text {
+    height: 321px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.contact-section div.text h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--text-clr2);
+}
+
+section.contact-section div.text p {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    color: var(--text-clr2);
+    opacity: 0.7;
+}
+
+section.contact-section form {
+    height: 675px;
+    width: 421px;
+    padding: 20px;
+    position: absolute;
+    right: 5%;
+    top: 425px;
+    background: #FF794D;
+    box-shadow: 0px 44px 44px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 10px 10px;
+}
+
+section.contact-section form h2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+section.contact-section form p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+section.contact-section form .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+section.contact-section form .col .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    overflow: visible;
+}
+
+section.contact-section form .col .inputBox input,
+section.contact-section form .col .inputBox textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+    resize: none;
+}
+
+section.contact-section form .col .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+section.contact-section form .col .inputBox input:focus + .text,
+section.contact-section form .col .inputBox input:valid + .text,
+section.contact-section form .col .inputBox textarea:focus + .text,
+section.contact-section form .col .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+section.contact-section form .col .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+section.contact-section form .col .inputBox input:focus ~ .line,
+section.contact-section form .col .inputBox input:valid ~ .line,
+section.contact-section form .col .inputBox textarea:focus ~ .line,
+section.contact-section form .col .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+
+section.contact-section form .col .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 5px 0;
+}
+
+section.contact-section form input[type="submit"] {
+    color: var(--text-clr2);
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 140px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 5px;
+}
+
+section.contact-section div.contact-details {
+    height: 307px;
+    display: flex;
+    gap: 110px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+section.contact-section div.contact-details .location i {
+    left: 7%;
+}
+
+section.contact-section div.contact-details .call i {
+    left: 38%;
+}
+
+section.contact-section div.contact-details .email i {
+    right: 25%;
+}
+
+section.contact-section div.contact-details i {
+    position:absolute;
+    float: left;
+    margin-top: 10px;
+    color: #52BAB3;
+    background-color: #D6EBE4;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+section.contact-section div.contact-details h5 {
+    font-size: 24px;
+    color: var(--text-clr2);
+    padding-bottom: 20px;
+}
+
+section.contact-section div.contact-details span {
+    font-size: 21px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+
+/* ------- Contact Section Ends ------- */
+/* Footer Starts From Here | Made By:- Peeyush Agarwal */
+
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+
+/* Footer Ends Here */
+/* Responsiveness Done by:- Peeyush Agarwal */
+
+@media (max-width: 960px) {
+    .main-section {
+        height: auto;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: var(--text-clr2);
+        padding-right: 5px;
+        height: 17px;
+    }
+    
+    .menu {
+        height: 17px;
+        width: 30px;
+        font-size: 25px;
+        padding-right: 5px;
+        color: var(--text-clr2);
+    }
+
+    section nav {
+        padding: 0 30px;
+    }
+
+    section.contact-section {
+        overflow: hidden;
+        height: 1000px;
+    }
+
+    section.contact-section img {
+        height: 450px;
+    }
+
+    section.contact-section .text h2 {
+        align-self: flex-start;
+        font-size: 30px !important;
+        padding: 0 30px !important;
+    }
+
+    section.contact-section .text p {
+        align-self: flex-start;
+        text-align: left;
+        font-size: 12px !important;
+        padding: 30px !important;
+    }
+    
+    section.contact-section form {
+        top: 104px;
+        right: 3%;
+        height: 700px;
+        width: 320px;
+    }
+
+    section.contact-section span.text {
+        font-size: 15px !important;
+        padding-top: 5px !important;
+    }
+    
+    section.contact-section .line {
+        background-color: #E1ECF0;
+        width: 300px !important;
+        font-size: 12px;
+    }
+
+    section.contact-section div.contact-details {
+        height: 250px;
+        gap: 10px;
+    }
+
+    section.contact-section div.contact-details .location i {
+        top: 954px;
+        left: 12%;
+    }
+    
+    section.contact-section div.contact-details .call i {
+        top: 954px;
+        left: 41%;
+    }
+    
+    section.contact-section div.contact-details .email i {
+        top: 954px;
+        right: 27%;
+    }
+
+    section.contact-section div.contact-details i {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    section.contact-section div.contact-details h5 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    
+    section.contact-section div.contact-details span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    footer {
+        height: 350px;
+    }
+    
+    footer .right {
+        padding-left: 50px;
+    }
+    
+    footer div.right span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .right p {
+        font-size: 12px;
+    }
+    
+    footer .left {
+        padding-right: 50px;
+        gap: 35px;
+    }
+    
+    footer .left ul {
+        gap: 1px;
+        font-size: 12px;
+    }
+
+    footer .left ul li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+    } 
+
+    section.contact-section img {
+        display: none;
+    }
+
+    section.contact-section form {
+        position: static;
+        right: 0;
+        height: 450px;
+        width: 320px;
+    }
+
+    section.contact-section {
+        overflow: hidden;
+        height: 1100px;
+    }
+
+    section.contact-section img {
+        height: 450px;
+    }
+
+    section.contact-section .text h2 {
+        align-self: center;
+        font-size: 30px !important;
+        padding: 0 30px !important;
+    }
+
+    section.contact-section .text p {
+        align-self: center;
+        text-align: center;
+        font-size: 12px !important;
+        padding: 30px !important;
+    }
+    
+    section.contact-section form {
+        top: 104px;
+        right: 3%;
+        height: 700px;
+        width: 320px;
+    }
+
+    section.contact-section span.text {
+        font-size: 15px !important;
+        padding-top: 5px !important;
+    }
+    
+    section.contact-section .line {
+        background-color: #E1ECF0;
+        width: 300px !important;
+        font-size: 12px;
+    }
+
+    section.contact-section div.contact-details {
+        margin-top: 50px;
+        height: 250px;
+        gap: 20px;
+    }
+
+    section.contact-section div.contact-details i {
+        position: unset;
+        padding: 10px;
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    section.contact-section div.contact-details h5 {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    
+    section.contact-section div.contact-details span {
+        font-size: 12px;
+        line-height: 5px !important;
+    }
+
+    footer {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    footer .right {
+        padding-left: 35px;
+    }
+    
+    footer .left {
+        padding-left: 35px;
+    }
+}

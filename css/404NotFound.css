@@ -1,0 +1,274 @@
+/* This Complete 404 Not Found Page is Made By :- Peeyush Agarwal */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.main-section {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar Section Starts Here | Made by:- Peeyush Agarwal */
+
+section nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+section.main-section nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+section.main-section nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+section.main-section ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+}
+
+section.main-section ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.main-section ul li a.button-gw {
+    background-color: var(--but-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 65px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+/* ------- Section Begins | Made by:- Peeyush Agarwal ------- */
+
+section.content {
+    height: 867px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content img {
+    justify-self: flex-start;
+}
+
+section.content h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--text-clr2);
+}
+
+section.content p {
+    text-align: center;
+    font-size: 21px;
+    color: var(--text-clr2);
+    opacity: 0.7;
+    padding-bottom: 45px;
+}
+
+section.content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FF794D;
+    padding: 10px 44px;
+    border-radius: 5px;
+}
+
+/* ------- Section Ends ------- */
+/* Footer Starts From Here | Made By:- Peeyush Agarwal */
+
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+
+/* Footer Ends Here */
+/* Responsiveness Done by:- Peeyush Agarwal */
+
+@media (max-width: 960px) {
+    .main-section {
+        height: auto;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: var(--text-clr2);
+        padding-right: 5px;
+        height: 17px;
+    }
+    
+    .menu {
+        height: 17px;
+        width: 30px;
+        font-size: 25px;
+        padding-right: 5px;
+        color: var(--text-clr2);
+    }
+
+    section nav {
+        padding: 0 30px;
+    }
+
+    footer {
+        height: 350px;
+    }
+    
+    footer .right {
+        padding-left: 50px;
+    }
+    
+    footer div.right span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .right p {
+        font-size: 12px;
+    }
+    
+    footer .left {
+        padding-right: 50px;
+        gap: 35px;
+    }
+    
+    footer .left ul {
+        gap: 1px;
+        font-size: 12px;
+    }
+
+    footer .left ul li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.content {
+        height: 600px;
+    }
+
+    section.content h2 {
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    section.content p {
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+
+    section.content a {
+        font-size: 12px;
+        padding: 10px 44px;
+    }
+
+    footer {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    footer .right {
+        padding-left: 35px;
+    }
+    
+    footer .left {
+        padding-left: 35px;
+    }
+}

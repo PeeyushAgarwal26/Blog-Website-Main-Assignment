@@ -1,0 +1,90 @@
+/* This Complete Page is Designed by:- Peeyush Agarwal */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1538;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.block {
+    position: absolute;
+    padding: 30px;
+    width: 50%;
+    background: #0e1538;
+    text-align: center;
+    color: white;
+}
+
+.block h2 {
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.block p {
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+.block ul {
+    list-style: none;
+}
+
+.block ul li {
+    text-align: left;
+    padding: 5px;
+}
+
+.block ul li a {
+    padding-left: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.glow::before, 
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .block {
+        width: 75%;
+    }
+
+    .block p {
+        font-size: 13px;
+    }
+
+    .block ul li a {
+        font-size: 18px;
+    }
+}

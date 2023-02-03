@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* CSS is Done by:- Peeyush Agarwal */
+
+:root {
+    --text-clr: #213053;
+    --text-clr2: #1D263A;
+    --but-bg: #1787FC;
+    --dot-clr: #F18B62;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.main-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+section nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
+section.main-section nav .logo {
+    color: var(--text-clr);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+section.main-section nav .logo #dot{
+    font-size: 30px;
+    color: var(--dot-clr);
+}
+
+section.main-section ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 0.5px;
+}
+
+section.main-section ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.main-section ul li a.button-gw {
+    background-color: var(--but-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 65px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* ------- Nav Bar Ends ------- */
+/* Blog Regular Starts | Made by:- Peeyush Agarwal */
+
+section.content-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F9FAFB;
+    padding-bottom: 130px;
+}
+
+section.content-section > h2 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-weight: 600;
+    font-size: 64px;
+    color: #1D263A;
+}
+
+section.content-section > p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    color: #1D263A;
+    opacity: 0.7;
+    padding-bottom: 60px;
+} 
+
+section.content-section .row {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+section.content-section .row .images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.content-section .row .images img {
+    border-radius: 10px;
+}
+
+section.content-section .row .images p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1D263A;
+}
+
+section.content-section .row .images .date {
+    font-size: 13px;
+    line-height: 22px;
+    color: #FF794D;
+    padding-top: 30px;
+}
+
+section.content-section div.page-numbers {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+section.content-section div.page-numbers span {
+    border: 2px solid #EAE9F2;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+section.content-section div.page-numbers span#active {
+    background-color: #1787FC;
+    border: 1px solid #1787FC;
+    color: white;
+}
+
+/* Blog Regular Ends */
+/* Footer Starts From Here | Made By:- Peeyush Agarwal */
+
+footer {
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    padding-left: 152px;
+}
+
+footer div.right span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213053;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+footer div.right span#dot {
+    color: #F18B62;
+}
+
+footer .right p {
+    font-size: 17px;
+    color: var(--text-clr2);
+    opacity: 0.8;
+}
+
+footer .left {
+    display: flex;
+    padding-right: 208px;
+    gap: 65px;
+    font-weight: 900;
+}
+
+footer .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-clr2);
+    font-size: 17px;
+}
+
+footer .left .heading {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+footer .left ul li {
+    padding-bottom: 20px;
+}
+
+/* Responsiveness Done by:- Peeyush Agarwal */
+
+@media (max-width: 960px) {
+    .main-section {
+        height: auto;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        color: var(--text-clr2);
+        padding-right: 5px;
+        height: 17px;
+    }
+    
+    .menu {
+        height: 17px;
+        width: 30px;
+        font-size: 25px;
+        padding-right: 5px;
+        color: var(--text-clr2);
+    }
+
+    section nav {
+        padding: 0 30px;
+    }
+
+    /* Nav aur Footer ka Responsiveness ho chuka h.. Idar se Main wala krna h Responsiveness */
+
+    section.content-section > h2 {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: 48px;
+    }
+    
+    section.content-section > p {
+        font-size: 17px;
+        line-height: 23px;
+        padding-bottom: 38px;
+    } 
+    
+    section.content-section .row {
+        padding-bottom: 80px;
+    }
+
+    section.content-section .row .images p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    section.content-section .row .images .date {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    section.content-section div.page-numbers {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    section.content-section div.page-numbers span {
+        border: 2px solid #EAE9F2;
+        border-radius: 5px;
+        padding: 8px 16px;
+    }
+    /* Nav aur Footer ka Responsiveness ho chuka h.. Idar se Main wala krna h Responsiveness */
+
+    footer {
+        height: 350px;
+    }
+    
+    footer .right {
+        padding-left: 50px;
+    }
+    
+    footer div.right span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .right p {
+        font-size: 12px;
+    }
+    
+    footer .left {
+        padding-right: 50px;
+        gap: 35px;
+    }
+    
+    footer .left ul {
+        gap: 1px;
+        font-size: 12px;
+    }
+
+    footer .left ul li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.content-section {
+        padding-bottom: 60px;
+    }
+
+    section.content-section > h2 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        font-size: 28px;
+    }
+    
+    section.content-section > p {
+        font-size: 10px;
+        line-height: 15px;
+        padding-bottom: 15px;
+    } 
+
+    section.content-section .row {
+        padding-bottom: 50px;
+    }
+    
+    section.content-section .row .images img {
+        width: 300px;
+    }
+
+    section.content-section .row .images .date {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+    section.content-section div.page-numbers {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    section.content-section div.page-numbers span {
+        border: 2px solid #EAE9F2;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    footer {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    footer .right {
+        padding-left: 35px;
+    }
+    
+    footer .left {
+        padding-left: 35px;
+    }
+}
